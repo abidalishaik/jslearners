@@ -12,7 +12,17 @@ function buttonClicked() {
 
 // document.getElementById("btn").addEventListener("click", buttonClicked);
 
-const btns = document.getElementsByClassName("btnclass");
-for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", buttonClicked);
+// const btns = document.getElementsByClassName("btnclass");
+// for (let i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener("click", buttonClicked);
+// }
+
+
+let a=1;
+function test() {
+    isNaN(a) && console.log(a++);
+    var a=2;
+    console.log(a);
 }
+console.log(a);
+test();
