@@ -34,7 +34,7 @@ class Person {
 const person = new Person("abid", 25);
 // console.log(person.#name); // abid
 console.log(person.age); // 25
-person.name = "abaliid";
+person.name = "abid";
 console.log(person.name); // abid
 
 console.log(person.greet); // Hello, my name is abid
