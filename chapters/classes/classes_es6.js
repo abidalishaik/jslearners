@@ -21,7 +21,7 @@ class Person {
   get greet() {
     return this.#greet();
   }
-  
+
   set name(value) {
     this.#name = value;
   }
