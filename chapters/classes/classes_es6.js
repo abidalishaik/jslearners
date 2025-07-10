@@ -1,6 +1,6 @@
 class Person {
   #name = "";
-  age = 0;
+  // age = 0;
   address = {
     city: "",
     zip: "",

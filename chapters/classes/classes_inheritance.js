@@ -1,4 +1,5 @@
 class Parent {
+  static age = 21;
   money = 300;
   constructor(money) {
     this.money = money;
@@ -11,15 +12,15 @@ class Parent {
 }
 
 class Child extends Parent {
-  constructor() {
-    super(500); // Call the parent's constructor
-    console.log("Child class constructor called");
-    // You can access parent's properties and methods here
-    console.log(this.money); // 300000000
-    console.log(super.greet("parent")); // Hello, I am the parent. I have 300000000 in my account.
-    console.log(this.greet("child")); // Hello, I am the child. I have 100000000 in my account.
+  // constructor() {
+    // super(500); // Call the parent's constructor
+    // console.log("Child class constructor called");
+    // // You can access parent's properties and methods here
+    // console.log(this.money); // 300000000
+    // console.log(super.greet("parent")); // Hello, I am the parent. I have 300000000 in my account.
+    // console.log(this.greet("child")); // Hello, I am the child. I have 100000000 in my account.
     // console.log(super.callparentGreet()); // Hello, I am the parent. I have 300000000 in my account.
-  }
+  // }
 
   // Overriding the parent's property
   money = 100; // This will override the parent's money property
@@ -40,6 +41,7 @@ class Child extends Parent {
 }
 
 const child = new Child(); // Parent's money: 100000000
+console.log(Child.age)
 // console.log(child.greet("child"));
 // console.log(child.money); // 100000000
 // console.log(child.callparentGreet()); // Hello, I am the parent. I have 300000000 in my account.
